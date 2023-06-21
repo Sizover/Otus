@@ -1,11 +1,9 @@
+fun main() {
 
-
-fun <T> main() {
-    Ls1<T>().runTest(Steps(), { justFun() })
 }
 
-fun justFun(){
-    println("Логика теста \"justFun1\"")
+fun justTestFun(){
+    println("Логика теста \"justTestFun\"")
 }
 
 class Steps{
@@ -20,6 +18,9 @@ class Steps{
     }
     fun someFun(){
         println("Логика метода 'some'")
+    //Изоляторы кавычек ставились не потому что нужны были какие-то кавычки,
+    // а именно потому что двойные имхо красивее, читабильнее
+    // и придают тектсту вид полновесной литературно-технической... эм... строки))
     }
     fun afterOne(){
         println("Логика метода \"afterOne\"")

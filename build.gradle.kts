@@ -13,6 +13,10 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.21")
+    testImplementation ("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation ("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testImplementation ("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+
 }
 
 tasks.test {
