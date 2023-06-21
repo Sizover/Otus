@@ -19,7 +19,7 @@ class Steps{
         println("Логика метода \"notbefore\"")
     }
     fun someFun(){
-        println("Логика метода \"some\"")
+        println("Логика метода 'some'")
     }
     fun afterOne(){
         println("Логика метода \"afterOne\"")
