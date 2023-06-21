@@ -1,7 +1,7 @@
 
 
-fun main(args: Array<String>) {
-    Ls1().RunTest(Steps(), { justFun() })
+fun <T> main() {
+    Ls1<T>().runTest(Steps(), { justFun() })
 }
 
 fun justFun(){
@@ -19,7 +19,7 @@ class Steps{
         println("Логика метода \"notbefore\"")
     }
     fun someFun(){
-        println("Логика метода \"some\"")
+        println("Логика метода 'some'")
     }
     fun afterOne(){
         println("Логика метода \"afterOne\"")

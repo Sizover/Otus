@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Sizover/Otus

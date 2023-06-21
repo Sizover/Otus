@@ -1,5 +1,5 @@
-interface TestRunner {
+interface TestRunner <T> {
 
-    fun <T> RunTest(steps: T, test:() -> Unit)
+    fun runTest(steps: T, test:() -> Unit)
 
 }
