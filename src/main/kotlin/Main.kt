@@ -1,11 +1,40 @@
 fun main() {
     Ls1<Steps>().runTest(Steps()) { justTestFun() }
 
-println("==================== пример вызова через  DSL ================================")
-
+    println("==================== пример вызова через  DSL ================================")
 
     ls1 {
         runTest(Steps()) { justTestFun() }
+    }
+
+    println("==================== Передача в вызов 'BeforeOnlyTestClass()' ================================")
+
+    ls1 {
+        runTest(BeforeOnlyTestClass()) { justTestFun() }
+    }
+
+    println("==================== Передача в вызов 'BeforeAndAfterTestClass()' ================================")
+
+    ls1 {
+        runTest(BeforeAndAfterTestClass()) { justTestFun() }
+    }
+
+    println("==================== Передача в вызов 'BeforeTwiceAndAfterTwiceTestClass()' ================================")
+
+    ls1 {
+        runTest(BeforeTwiceAndAfterTwiceTestClass()) { justTestFun() }
+    }
+
+    println("==================== Передача в вызов 'AfterOnlyTestClass()' ================================")
+
+    ls1 {
+        runTest(AfterOnlyTestClass()) { justTestFun() }
+    }
+
+    println("==================== Передача в вызов 'EmptyTestClass()' ================================")
+
+    ls1 {
+        runTest(EmptyTestClass()) { justTestFun() }
     }
 
 }
