@@ -1,4 +1,12 @@
 fun main() {
+    Ls1<Steps>().runTest(Steps()) { justTestFun() }
+
+println("==================== пример вызова через  DSL ================================")
+
+
+    ls1 {
+        runTest(Steps()) { justTestFun() }
+    }
 
 }
 
