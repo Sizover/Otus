@@ -1,3 +1,11 @@
+/**
+ * В main применен вызов DSL функции testAround с вынесенной за скобки в лямбду функцией
+ * функция testAround определена нами заранее в Dsl.kt
+ * testAround сначала создает экземпляр класса TestAround и затем вызывает функцию из лямбды
+ * Окружив контекстом Класса TestAround вызываем его функцию runTest
+ * передавая ей анализируемый на before after класс
+ */
+
 fun main() {
     Ls1<Steps>().runTest(Steps()) { justTestFun() }
 
@@ -19,7 +27,7 @@ fun main() {
         runTest(BeforeAndAfterTestClass()) { justTestFun() }
     }
 
-    println("==================== Передача в вызов 'BeforeTwiceAndAfterTwiceTestClass()' ================================")
+    println("==================== Передача в вызов 'BeforeTwiceAndAfterTwiceTestClass()' ============================")
 
     ls1 {
         runTest(BeforeTwiceAndAfterTwiceTestClass()) { justTestFun() }
